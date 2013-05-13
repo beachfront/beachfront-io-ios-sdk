@@ -32,13 +32,13 @@ This document details the process of integrating the Beachfront AD SDK with your
 ```
 6. Optionally register for notifications to get notified about bfio ad events. The four available notifications are
 
-BFAdInterstitialOpenedNotification 		- Fired when an ad interstitial view is opened
+	BFAdInterstitialOpenedNotification 		- Fired when an ad interstitial view is opened
 
-BFAdInterstitialStartedNotification 	- Fired when an ad video starts playing.
+	BFAdInterstitialStartedNotification 	- Fired when an ad video starts playing.
 
-BFAdInterstitialCompleteNotification 	- Fired when an ad video is completed.
+	BFAdInterstitialCompleteNotification 	- Fired when an ad video is completed.
 
-BFAdInterstitialClosedNotification      - Fired when an ad interstitial view is closed.
+	BFAdInterstitialClosedNotification      - Fired when an ad interstitial view is closed.
 
 ```	
 	...
