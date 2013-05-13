@@ -107,8 +107,8 @@
 		B6CA3BEF1740EFAD008691EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6BDCED1174197F6004A341E /* CoreGraphics.framework */,
 				B6BDCEC7174197C2004A341E /* BFIOSDK.embeddedframework */,
+				B6BDCED1174197F6004A341E /* CoreGraphics.framework */,
 				B6BDCEA51740F22D004A341E /* MediaPlayer.framework */,
 				B6BDCEA31740F21D004A341E /* Foundation.framework */,
 				B6BDCEA11740F216004A341E /* UIKit.framework */,
