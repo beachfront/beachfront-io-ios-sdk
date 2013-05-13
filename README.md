@@ -8,7 +8,6 @@ This document details the process of integrating the Beachfront AD SDK with your
 * BeachFront IO app id & Ad Unit id - [Get it from here](http://beachfront.io/join)
 * BeachFront IO SDK Framework
 * Xcode 4.5 or higher
-* iOS SDK 6.1 or higher
 
 ## Installation
 1. Access the beachfront.io Console and register your application to get your App ID & Ad unit Id.
