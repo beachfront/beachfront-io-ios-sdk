@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+	<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+	<!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="BFMViewController" sceneMemberID="viewController">
+		    <view key="view" contentMode="scaleToFill" id="d63-Kd-2i6">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+			<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+			<subviews>
+			    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-5q-ut4">
+				<constraints>
+				    <constraint firstAttribute="width" constant="150" id="h0L-VW-mCf"/>
+				</constraints>
+				<fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+				<state key="normal" title="Show Interstitial">
+				    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+				    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+				</state>
+				<state key="highlighted">
+				    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+				</state>
+				<connections>
+				    <action selector="ShowInterstitial:" destination="2" eventType="touchUpInside" id="3Y3-HT-zpH"/>
+				</connections>
+			    </button>
+			    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b780ee34-2d18-4913-8582-e762486b86d3" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ed-c0-qRS">
+				<accessibility key="accessibilityConfiguration" hint="AppID" label="AppID"/>
+				<constraints>
+				    <constraint firstAttribute="width" constant="280" id="aRa-2K-SrB"/>
+				</constraints>
+				<fontDescription key="fontDescription" type="system" pointSize="14"/>
+				<textInputTraits key="textInputTraits"/>
+			    </textField>
+			    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4924822d-0324-47e1-eb44-de8d683cf517" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TCP-Op-d8t">
+				<accessibility key="accessibilityConfiguration" hint="AdUnitID" label="AdUnitID"/>
+				<fontDescription key="fontDescription" type="system" pointSize="14"/>
+				<textInputTraits key="textInputTraits"/>
+			    </textField>
+			    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Beachfront.io Test App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGA-vI-Wug">
+				<fontDescription key="fontDescription" type="system" pointSize="17"/>
+				<color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+				<nil key="highlightedColor"/>
+			    </label>
+			</subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+			<constraints>
+			    <constraint firstItem="IZa-5q-ut4" firstAttribute="top" secondItem="d63-Kd-2i6" secondAttribute="top" constant="405" id="4Wp-Al-WbZ"/>
+			    <constraint firstItem="LGA-vI-Wug" firstAttribute="top" secondItem="d63-Kd-2i6" secondAttribute="top" constant="61" id="5Ud-jy-fSH"/>
+			    <constraint firstItem="TCP-Op-d8t" firstAttribute="trailing" secondItem="0Ed-c0-qRS" secondAttribute="trailing" type="default" id="Dwa-oL-fXk"/>
+			    <constraint firstItem="0Ed-c0-qRS" firstAttribute="top" secondItem="d63-Kd-2i6" secondAttribute="top" constant="143" id="Nyf-Mp-PFa"/>
+			    <constraint firstItem="TCP-Op-d8t" firstAttribute="top" secondItem="d63-Kd-2i6" secondAttribute="top" constant="248" id="Tyg-0Z-FTR"/>
+			    <constraint firstItem="IZa-5q-ut4" firstAttribute="centerX" secondItem="TCP-Op-d8t" secondAttribute="centerX" type="default" id="ZHa-mt-1GN"/>
+			    <constraint firstItem="LGA-vI-Wug" firstAttribute="centerX" secondItem="d63-Kd-2i6" secondAttribute="centerX" type="default" id="hrg-Ao-vxU"/>
+			    <constraint firstItem="0Ed-c0-qRS" firstAttribute="centerX" secondItem="LGA-vI-Wug" secondAttribute="centerX" type="default" id="jof-Ph-8r0"/>
+			    <constraint firstItem="TCP-Op-d8t" firstAttribute="leading" secondItem="0Ed-c0-qRS" secondAttribute="leading" type="default" id="swf-WM-Vkp"/>
+			</constraints>
+                    </view>
+		    <connections>
+			<outlet property="TextAdUnitID" destination="TCP-Op-d8t" id="uY3-MW-TVc"/>
+			<outlet property="TextAppID" destination="0Ed-c0-qRS" id="MQg-2Q-E5N"/>
+		    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+	<class className="BFMViewController" superclassName="UIViewController">
+	    <source key="sourceIdentifier" type="project" relativePath="./Classes/BFMViewController.h"/>
+	    <relationships>
+		<relationship kind="action" name="ShowInterstitial:"/>
+		<relationship kind="outlet" name="TextAdUnitID" candidateClass="UITextField"/>
+		<relationship kind="outlet" name="TextAppID" candidateClass="UITextField"/>
+	    </relationships>
+	</class>
+	<class className="NSLayoutConstraint" superclassName="NSObject">
+	    <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+	</class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
