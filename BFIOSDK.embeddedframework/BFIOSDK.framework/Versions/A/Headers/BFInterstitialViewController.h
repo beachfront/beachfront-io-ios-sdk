@@ -10,16 +10,6 @@
 #import <BFIOSDK/BFAdResponse.h>
 
 @interface BFInterstitialViewController : UIViewController
-/**
- Initializes and returns a newly allocated  BFInterstitialViewController Object
- 
- This is the designated initializer.
- 
- @param dictionary The json dictionary received from the server
- */
 -(id)initWithAdResponse:(BFAdResponse*)adResponse;
-/**
- The ad response object that was passed during initialization
- */
-@property (strong, readonly) BFAdResponse* adResponse;
+@property (strong, nonatomic) BFAdResponse* adResponse;
 @end
