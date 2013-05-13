@@ -10,6 +10,7 @@
 
 //BFIOSSDK
 #import <BFIOSDK/BFAdResponse.h>
+#import <BFIOSDK/BFInterstitialView.h>
 #import <BFIOSDK/BFInterstitialViewController.h>
 #import <BFIOSDK/BFHTTPRequestOperation.h>
 
