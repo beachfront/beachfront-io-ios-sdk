@@ -11,7 +11,7 @@ This document details the process of integrating the Beachfront AD SDK with your
 
 ## Installation
 1. Access the beachfront.io Console and register your application to get your App ID & Ad unit Id.
-2. Download the BeachFront iOS SDK Embedded Framwork and copy it into your project Folder.
+2. Download the BFIOSSDK Embedded Framwork and copy it into your project Folder.
 3. Add the BFIOSDK.embeddedFramework to your project and include BFIOSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
 4. Also add Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework by clicking on the + button in the "Link Binary With Libraries" panel.
   
