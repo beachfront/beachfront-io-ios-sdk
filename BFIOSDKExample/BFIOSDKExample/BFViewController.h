@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BFMViewController : UIViewController
+@interface BFViewController : UIViewController
 - (IBAction)ShowInterstitial:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *TextAppID;
 @property (weak, nonatomic) IBOutlet UITextField *TextAdUnitID;

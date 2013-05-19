@@ -9,11 +9,11 @@
 #import "BFViewController.h"
 #import <BFIOSDK/BFIOSDK.h>
 
-@interface BFMViewController ()
+@interface BFViewController ()
 
 @end
 
-@implementation BFMViewController
+@implementation BFViewController
 
 @synthesize TextAdUnitID, TextAppID;
 
