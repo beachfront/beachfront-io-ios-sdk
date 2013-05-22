@@ -1,5 +1,5 @@
 //
-//  BFViewController.h
+//  BFHomeViewController.h
 //  BFIOSDKExample
 //
 //  Created by Sumeru Chatterjee on 5/13/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BFViewController : UIViewController
+@interface BFHomeViewController : UIViewController
 - (IBAction)ShowInterstitial:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *TextAppID;
 @property (weak, nonatomic) IBOutlet UITextField *TextAdUnitID;

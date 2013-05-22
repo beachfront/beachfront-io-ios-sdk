@@ -1,19 +1,19 @@
 //
-//  BFViewController.m
+//  BFHomeViewController.m
 //  BFIOSDKExample
 //
 //  Created by Sumeru Chatterjee on 5/13/13.
 //  Copyright (c) 2013 Beachfront Media LLC. All rights reserved.
 //
 
-#import "BFViewController.h"
+#import "BFHomeViewController.h"
 #import <BFIOSDK/BFIOSDK.h>
 
-@interface BFViewController ()
+@interface BFHomeViewController ()
 
 @end
 
-@implementation BFViewController
+@implementation BFHomeViewController
 
 @synthesize TextAdUnitID, TextAppID;
 

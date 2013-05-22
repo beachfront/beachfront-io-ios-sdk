@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60E9E2C174C6BA400C72EF0 /* BFIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60E9E29174C6BA400C72EF0 /* BFIOSDK.framework */; };
+		B60E9E2D174C6BA400C72EF0 /* BFIOSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60E9E2B174C6BA400C72EF0 /* BFIOSDK.bundle */; };
 		B6BDCEA21740F216004A341E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDCEA11740F216004A341E /* UIKit.framework */; };
 		B6BDCEA41740F21D004A341E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDCEA31740F21D004A341E /* Foundation.framework */; };
 		B6BDCEA61740F22D004A341E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDCEA51740F22D004A341E /* MediaPlayer.framework */; };
-		B6BDCECD174197C2004A341E /* BFIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDCEC8174197C2004A341E /* BFIOSDK.framework */; };
-		B6BDCECE174197C2004A341E /* beachfrontio_small.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BDCECA174197C2004A341E /* beachfrontio_small.png */; };
-		B6BDCECF174197C2004A341E /* button_close.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BDCECB174197C2004A341E /* button_close.png */; };
-		B6BDCED0174197C2004A341E /* testdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6BDCECC174197C2004A341E /* testdata.txt */; };
 		B6BDCED2174197F6004A341E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BDCED1174197F6004A341E /* CoreGraphics.framework */; };
 		B6CA3BFB1740EFAD008691EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CA3BF91740EFAD008691EF /* InfoPlist.strings */; };
 		B6CA3BFD1740EFAD008691EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA3BFC1740EFAD008691EF /* main.m */; };
@@ -23,17 +21,15 @@
 		B6CA3C071740EFAD008691EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA3C061740EFAD008691EF /* Default-568h@2x.png */; };
 		B6CA3C0A1740EFAD008691EF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CA3C081740EFAD008691EF /* MainStoryboard_iPhone.storyboard */; };
 		B6CA3C0D1740EFAD008691EF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CA3C0B1740EFAD008691EF /* MainStoryboard_iPad.storyboard */; };
-		B6CA3C101740EFAD008691EF /* BFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA3C0F1740EFAD008691EF /* BFViewController.m */; };
+		B6CA3C101740EFAD008691EF /* BFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA3C0F1740EFAD008691EF /* BFHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60E9E29174C6BA400C72EF0 /* BFIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFIOSDK.framework; sourceTree = "<group>"; };
+		B60E9E2B174C6BA400C72EF0 /* BFIOSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BFIOSDK.bundle; sourceTree = "<group>"; };
 		B6BDCEA11740F216004A341E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B6BDCEA31740F21D004A341E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6BDCEA51740F22D004A341E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B6BDCEC8174197C2004A341E /* BFIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFIOSDK.framework; sourceTree = "<group>"; };
-		B6BDCECA174197C2004A341E /* beachfrontio_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beachfrontio_small.png; sourceTree = "<group>"; };
-		B6BDCECB174197C2004A341E /* button_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_close.png; sourceTree = "<group>"; };
-		B6BDCECC174197C2004A341E /* testdata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testdata.txt; sourceTree = "<group>"; };
 		B6BDCED1174197F6004A341E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B6CA3BED1740EFAD008691EF /* BFIOSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFIOSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CA3BF81740EFAD008691EF /* BFIOSDKExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BFIOSDKExample-Info.plist"; sourceTree = "<group>"; };
@@ -47,8 +43,8 @@
 		B6CA3C061740EFAD008691EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B6CA3C091740EFAD008691EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B6CA3C0C1740EFAD008691EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B6CA3C0E1740EFAD008691EF /* BFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFViewController.h; sourceTree = "<group>"; };
-		B6CA3C0F1740EFAD008691EF /* BFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFViewController.m; sourceTree = "<group>"; };
+		B6CA3C0E1740EFAD008691EF /* BFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFHomeViewController.h; sourceTree = "<group>"; };
+		B6CA3C0F1740EFAD008691EF /* BFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,29 +56,27 @@
 				B6BDCEA61740F22D004A341E /* MediaPlayer.framework in Frameworks */,
 				B6BDCEA41740F21D004A341E /* Foundation.framework in Frameworks */,
 				B6BDCEA21740F216004A341E /* UIKit.framework in Frameworks */,
-				B6BDCECD174197C2004A341E /* BFIOSDK.framework in Frameworks */,
+				B60E9E2C174C6BA400C72EF0 /* BFIOSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6BDCEC7174197C2004A341E /* BFIOSDK.embeddedframework */ = {
+		B60E9E28174C6BA400C72EF0 /* BFIOSDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				B6BDCEC8174197C2004A341E /* BFIOSDK.framework */,
-				B6BDCEC9174197C2004A341E /* Resources */,
+				B60E9E29174C6BA400C72EF0 /* BFIOSDK.framework */,
+				B60E9E2A174C6BA400C72EF0 /* Resources */,
 			);
 			name = BFIOSDK.embeddedframework;
 			path = ../BFIOSDK.embeddedframework;
 			sourceTree = "<group>";
 		};
-		B6BDCEC9174197C2004A341E /* Resources */ = {
+		B60E9E2A174C6BA400C72EF0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B6BDCECA174197C2004A341E /* beachfrontio_small.png */,
-				B6BDCECB174197C2004A341E /* button_close.png */,
-				B6BDCECC174197C2004A341E /* testdata.txt */,
+				B60E9E2B174C6BA400C72EF0 /* BFIOSDK.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -107,7 +101,7 @@
 		B6CA3BEF1740EFAD008691EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6BDCEC7174197C2004A341E /* BFIOSDK.embeddedframework */,
+				B60E9E28174C6BA400C72EF0 /* BFIOSDK.embeddedframework */,
 				B6BDCED1174197F6004A341E /* CoreGraphics.framework */,
 				B6BDCEA51740F22D004A341E /* MediaPlayer.framework */,
 				B6BDCEA31740F21D004A341E /* Foundation.framework */,
@@ -123,8 +117,8 @@
 				B6CA3C001740EFAD008691EF /* BFAppDelegate.m */,
 				B6CA3C081740EFAD008691EF /* MainStoryboard_iPhone.storyboard */,
 				B6CA3C0B1740EFAD008691EF /* MainStoryboard_iPad.storyboard */,
-				B6CA3C0E1740EFAD008691EF /* BFViewController.h */,
-				B6CA3C0F1740EFAD008691EF /* BFViewController.m */,
+				B6CA3C0E1740EFAD008691EF /* BFHomeViewController.h */,
+				B6CA3C0F1740EFAD008691EF /* BFHomeViewController.m */,
 				B6CA3BF71740EFAD008691EF /* Supporting Files */,
 			);
 			path = BFIOSDKExample;
@@ -202,9 +196,7 @@
 				B6CA3C071740EFAD008691EF /* Default-568h@2x.png in Resources */,
 				B6CA3C0A1740EFAD008691EF /* MainStoryboard_iPhone.storyboard in Resources */,
 				B6CA3C0D1740EFAD008691EF /* MainStoryboard_iPad.storyboard in Resources */,
-				B6BDCECE174197C2004A341E /* beachfrontio_small.png in Resources */,
-				B6BDCECF174197C2004A341E /* button_close.png in Resources */,
-				B6BDCED0174197C2004A341E /* testdata.txt in Resources */,
+				B60E9E2D174C6BA400C72EF0 /* BFIOSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +209,7 @@
 			files = (
 				B6CA3BFD1740EFAD008691EF /* main.m in Sources */,
 				B6CA3C011740EFAD008691EF /* BFAppDelegate.m in Sources */,
-				B6CA3C101740EFAD008691EF /* BFViewController.m in Sources */,
+				B6CA3C101740EFAD008691EF /* BFHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
