@@ -13,6 +13,18 @@ typedef enum{
     BFAdResponseResultFailure,
 }BFAdResponseResult;
 
+extern const NSString *kInteractiveTypeTwitter;
+extern const NSString *kInteractiveTypeFacebook;
+extern const NSString *kInteractiveTypeDownload;
+extern const NSString *kInteractiveTypePhone;
+
+extern const NSString *kInteractiveKeyType;
+extern const NSString *kInteractiveKeyURL;
+extern const NSString *kInteractiveKeyText;
+extern const NSString *kInteractiveKeyTracking;
+
+
+
 @interface BFAdResponse : NSObject
 /**
  Initializes and returns a newly allocated  BFAdResponse Object
@@ -66,4 +78,18 @@ typedef enum{
  The duration of the advertisement.
  */
 @property (readonly, nonatomic)         NSInteger duration;
+/**
+ Whether the Ad is Interactive
+ */
+@property (readonly, nonatomic)         BOOL isInteractive;
+/**
+ An array of Interactive Items for Interactive Ads
+ */
+@property (readonly, nonatomic, strong) NSArray *interactiveElements;
+/**
+ The URL to the background image of the Interactive Ad
+ */
+@property (readonly, nonatomic, strong) NSDictionary *interactiveBackground;
+
+
 @end

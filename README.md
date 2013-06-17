@@ -12,8 +12,10 @@ This document details the process of integrating the Beachfront AD SDK with your
 ## Installation
 1. Access the beachfront.io Console and register your application to get your App ID & Ad unit Id.
 2. Download the BFIOSSDK Embedded Framwork and copy it into your project Folder.
-3. Add the BFIOSDK.embeddedFramework to your project and include BFIOSDK.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section.
-4. Also add Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework by clicking on the + button in the "Link Binary With Libraries" panel.
+3. Add the BFIOSDK.embeddedFramework to your project,
+4. Add the BFIOSDK.framework (if it does not already exist) in the "Link Binary with Libraries" panel in the project "Build Phases" section of your project target.
+5. Add the frameworks Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section of your project target.
+6. **IMPORTANT**: Add '-ObjC' to 'Other Linker Flags' in the 'Build Settings' of your project target if not already present.
   
 5. Wherever you want to show a beachfront-io advertisement, import the framework header.
 ```

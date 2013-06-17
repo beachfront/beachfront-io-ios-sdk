@@ -313,6 +313,7 @@
 				GCC_PREFIX_HEADER = "BFIOSDKExample/BFIOSDKExample-Prefix.pch";
 				INFOPLIST_FILE = "BFIOSDKExample/BFIOSDKExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -330,6 +331,7 @@
 				GCC_PREFIX_HEADER = "BFIOSDKExample/BFIOSDKExample-Prefix.pch";
 				INFOPLIST_FILE = "BFIOSDKExample/BFIOSDKExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
