@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F14639F1-117D-4A60-89A4-8A68F93DFE79</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BFIOSDKExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</key>
+		<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>public-beachfrontio-ios-sdk</string>
+		</dict>
+	</array>
+</dict>
+</plist>
