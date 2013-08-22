@@ -1,6 +1,6 @@
-## Beachfront iOS SDK Usage Guide
 
-This document guides you through the process of integrating the Beachfront.io SDK into your iOS app. 
+# Guide
+Beachfront.io is the easist way monetize your app using video Ads. This document shows you how to integrate Beachfront.io into your iOS app.
 
 
 
