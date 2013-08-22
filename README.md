@@ -1,73 +1,65 @@
-## Beachfront iOS SDK usage guide
+## Beachfront iOS SDK Usage Guide
 
-## Overview
-This document details the process of integrating the Beachfront AD SDK with your iOS application. 
+This document guides you through the process of integrating the Beachfront.io SDK into your iOS app. 
 
-## Requirements
 
-* BeachFront IO app id & Ad Unit id - [Get it from here](http://beachfront.io/join)
-* BeachFront IO SDK Framework
-* Xcode 4.5 or higher
 
-## Installation
-1. Access the beachfront.io Console and register your application to get your App ID & Ad unit Id.
-2. Download the BFIOSSDK Embedded Framwork and copy it into your project Folder.
-3. Add the BFIOSDK.embeddedFramework to your project,
-4. Add the BFIOSDK.framework (if it does not already exist) in the "Link Binary with Libraries" panel in the project "Build Phases" section of your project target.
-5. Add the frameworks Foundation.framework, CoreGraphics.framework, MediaPlayer.framework and UIKit.framework in the "Link Binary with Libraries" panel in the project "Build Phases" section of your project target.
-6. **IMPORTANT**: Add '-ObjC' to 'Other Linker Flags' in the 'Build Settings' of your project target if not already present.
+## What You'll Need
+* Xcode version 4.5 or higher
+* An iOS app targeting at least iOS version 5.1
+
+
+## Install the SDK
+
+1. [Get a Beachfront.io account](http://beachfront.io/join) if you don't already have one.
+2. Login to the [dashboard](http://beachfront.io/) and create a new app.
+3. Click 'Edit App' and you will see your App ID & Ad Unit Id (copy for later).
+3. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
+4. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework to the list.
+5. While you're still in "Link Binary with Libraries" add the frameworks:
+	* Foundation.framework
+	* CoreGraphics.framework
+	* MediaPlayer.framework
+	* UIKit.framework
+6. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
   
-5. Wherever you want to show a beachfront-io advertisement, import the framework header.
-```
-#import <BFIOSDK/BFIOSDK.h>
-```
+7. Import the framework header you want to show an Ad. (#import <BFIOSDK/BFIOSDK.h>)
 
-6. To show the advertisement simply make a call to the (showAdWithAppID:adUnitID) method
-```
-- (void)yourMethod {
-	...
-	...
-    
-    [BFIOSDK showAdWithAppID:<YOUR APPID HERE> adUnitID:<YOUR ADUNITID HERE>];
-    
-    ...
-    ...
-}
-```
-7. Optionally register for notifications to get notified about bfio ad events. The four available notifications are
 
-	BFAdInterstitialOpenedNotification 		- Fired when an ad interstitial view is opened
 
-	BFAdInterstitialStartedNotification 	- Fired when an ad video starts playing.
+## Showing Ads
 
-	BFAdInterstitialCompleteNotification 	- Fired when an ad video is completed.
-
-	BFAdInterstitialClosedNotification      - Fired when an ad interstitial view is closed.
-
-```	
-	...
-  
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialOpened:)
-                                                   name:BFAdInterstitialOpenedNotification
-                                                 object:nil];
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self
-                                            selector:@selector(interstitialClosed:)
-                                                name:BFAdInterstitialClosedNotification
-                                              object:nil];
-    
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialStarted:)
-                                                   name:BFAdInterstitialStartedNotification
-                                                 object:nil];
-    
-    [[NSNotificationCenter defaultCenter]   addObserver:self
-                                               selector:@selector(interstitialComplete:)
-                                                   name:BFAdInterstitialCompleteNotification
-                                                 object:nil];
-   ...
+Whenever you want to show an Ad simply use the following method call:    
 
 ```
+[BFIOSDK showAdWithAppID:<YOUR APPID HERE> adUnitID:<YOUR ADUNITID HERE>];
+```
 
-Have a bug? Please [create an issue on GitHub](https://github.com/beachfront/beachfront-io-ios-sdk/issues)!
+    
+    
+## Listening for Events
+Optionally register for BFIO Ad events by adding your controller as an observer to the following SDK notifications:
+
+
+#####BFAdInterstitialOpenedNotification
+	Fires after interstitial view opens
+
+#####BFAdInterstitialStartedNotification
+	Fired after interstitial ad video starts playing
+
+#####BFAdInterstitialCompleteNotification
+    Fired when an ad video is completed
+
+#####BFAdInterstitialClosedNotification
+	Fired when an ad interstitial view is closed
+
+
+
+
+## Check out the Examples
+
+Also see the sample app 'BFIOSDKExample' included in the SDK download bundle. It contains clear examples on how to show an interstitial ad and register for events. 
+
+
+##Support 
+Have an issue? [Contact us](mailto:eric@beachfrontmedia.com) or [create an issue on GitHub](https://github.com/beachfront/beachfront-io-ios-sdk/issues)
