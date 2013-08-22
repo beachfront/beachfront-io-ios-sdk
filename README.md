@@ -9,7 +9,7 @@ Beachfront.io is the easist way monetize your app using video Ads. This document
 * An iOS app targeting at least iOS version 5.1
 
 
-## Install the SDK
+## Installing the SDK
 
 1. [Get a Beachfront.io account](http://beachfront.io/join) if you don't already have one.
 2. Login to the [dashboard](http://beachfront.io/) and create a new app.
@@ -23,16 +23,21 @@ Beachfront.io is the easist way monetize your app using video Ads. This document
 	* UIKit.framework
 6. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
   
-7. Import the framework header you want to show an Ad. (#import <BFIOSDK/BFIOSDK.h>)
+7. Import the framework header wherever you want to show an Ad. 
+
+```
+ #import <BFIOSDK/BFIOSDK.h>
+```
+
 
 
 
 ## Showing Ads
 
-Whenever you want to show an Ad simply use the following method call:    
+Whenever you want to show a video Ad just use the following method call:    
 
 ```
-[BFIOSDK showAdWithAppID:<YOUR APPID HERE> adUnitID:<YOUR ADUNITID HERE>];
+[BFIOSDK showAdWithAppID:@"yourAppID" adUnitID:@"yourAdUnitID"];
 ```
 
     
