@@ -12,18 +12,49 @@
 #import <BFIOSDK/BFAdResponse.h>
 #import <BFIOSDK/BFInterstitialView.h>
 #import <BFIOSDK/BFInterstitialViewController.h>
+#import <BFIOSDK/BFPrerollView.h>
 #import <BFIOSDK/BFHTTPRequestOperation.h>
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
-extern NSString * const BFAdInterstitialCompleteNotification;
+extern NSString * const BFAdInterstitialCompletedNotification;
 extern NSString * const BFAdInterstitialClosedNotification;
 
+extern NSString * const BFAdPrerollStartedNotification;
+extern NSString * const BFAdPrerollCompletedNotification;
+
 @interface BFIOSDK : NSObject
+
+
 /**
+ Shows an interstitial ad in fullscreen
+ @param appID The App ID
+ @param success The Ad Unit ID
+ */
++ (void) showInterstitialAdWithAppID:(NSString *)appID
+                            adUnitID:(NSString *)adUnitID;
+
+
+/**
+ Shows a preroll ad
+ @param rect The display rect of the video player
+ @param appID The App ID
+ @param success The Ad Unit ID
+ */
++ (void) showPrerollAdInView:(UIView*)view
+                      inRect:(CGRect)rect
+                       AppID:(NSString *)appID
+                    adUnitID:(NSString *)adUnitID;
+
+
+/**
+ (Deprecated)
  Shows an advertisement in a modal view
  @param appID The App ID
  @param success The Ad Unit ID
-*/
-+ (void) showAdWithAppID:(NSString *)appID adUnitID:(NSString *)adUnitID;
+ */
++ (void) showAdWithAppID:(NSString *)appID
+                adUnitID:(NSString *)adUnitID;
+
+
 @end

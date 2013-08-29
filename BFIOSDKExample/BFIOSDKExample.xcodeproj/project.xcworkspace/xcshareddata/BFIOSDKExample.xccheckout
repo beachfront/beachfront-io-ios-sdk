@@ -3,36 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F14639F1-117D-4A60-89A4-8A68F93DFE79</string>
+	<string>81D6571F-9C4D-4566-9943-D746E5D2F0EF</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BFIOSDKExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</key>
-		<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+		<key>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</key>
+		<string>https://github.com/mefeedia/beachfront-IO.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
+	<string>bfio-ios-sample/BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</key>
-		<string>../../..</string>
+		<key>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+	<string>https://github.com/mefeedia/beachfront-IO.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</string>
+	<string>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D4E5FE9B-8EBA-4545-B88D-DA90142C38EB</string>
+			<string>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</string>
 			<key>IDESourceControlWCCName</key>
-			<string>public-beachfrontio-ios-sdk</string>
+			<string>beachfront-IO</string>
 		</dict>
 	</array>
 </dict>
