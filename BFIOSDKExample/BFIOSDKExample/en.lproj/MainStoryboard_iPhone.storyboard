@@ -1,58 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gjW-0v-YOg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gjW-0v-YOg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Table View Controller - BFIO Examples-->
         <scene sceneID="aNi-Ys-5Eq">
             <objects>
                 <tableViewController id="ten-E0-rKT" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uGa-Ih-jUo">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uGa-Ih-jUo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="eJT-Q2-Ar0">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="LoO-Lc-sZX" style="IBUITableViewCellStyleDefault" id="IDm-SH-dEd">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IDm-SH-dEd" id="udV-2b-Tcy">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Interstitial Ad Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LoO-Lc-sZX">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="2" kind="push" id="uAk-aY-ywp"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="CWf-pg-NMd" style="IBUITableViewCellStyleDefault" id="3mj-z9-tC7">
-                                        <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3mj-z9-tC7" id="vA3-Al-ecD">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Preroll Ad Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CWf-pg-NMd">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                         <connections>
                                             <segue destination="GjE-dG-Ch2" kind="push" id="UF0-IK-Go0"/>
                                         </connections>
@@ -62,7 +61,6 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="BFIO Examples" id="Of9-zY-Xbq"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhj-Rj-pKX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +70,6 @@
         <scene sceneID="YDW-DY-C8Y">
             <objects>
                 <navigationController definesPresentationContext="YES" id="gjW-0v-YOg" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2c-fg-Tdr">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -89,30 +86,25 @@
             <objects>
                 <viewController id="GjE-dG-Ch2" customClass="BFExampleBViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVD-Z3-HKs">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b780ee34-2d18-4913-8582-e762486b86d3" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="8k7-pz-V0T">
-                                <rect key="frame" x="20" y="212.5" width="289" height="30"/>
+                                <rect key="frame" x="20" y="296" width="289" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AppID" label="AppID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4924822d-0324-47e1-eb44-de8d683cf517" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="8RQ-Oh-bWf">
-                                <rect key="frame" x="20" y="281" width="287" height="30"/>
+                                <rect key="frame" x="20" y="391.5" width="287" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AdUnitID" label="AdUnitID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OPM-gY-mVJ">
-                                <rect key="frame" x="90" y="333.5" width="140" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="90" y="470" width="140" height="44"/>
                                 <state key="normal" title="Show Preroll Ad">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="ShowPreroll:" destination="GjE-dG-Ch2" eventType="touchUpInside" id="ZjE-XC-vPt"/>
@@ -150,7 +142,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Preroll Ad" id="hag-CJ-izo"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="button" destination="OPM-gY-mVJ" id="ZE5-aS-WGP"/>
                         <outlet property="labelAdUnitId" destination="uZc-H2-yfq" id="eav-Tu-VX0"/>
@@ -169,33 +160,28 @@
             <objects>
                 <viewController id="2" customClass="BFExampleAViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <userGuides>
                             <userLayoutGuide location="160" affinity="minY"/>
                         </userGuides>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b780ee34-2d18-4913-8582-e762486b86d3" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="Iqr-K7-K4i">
-                                <rect key="frame" x="20" y="42.5" width="289" height="30"/>
+                                <rect key="frame" x="20" y="59" width="289" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AppID" label="AppID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4924822d-0324-47e1-eb44-de8d683cf517" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="O0w-lu-oHw">
-                                <rect key="frame" x="20" y="111.5" width="285" height="30"/>
+                                <rect key="frame" x="20" y="155.5" width="285" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AdUnitID" label="AdUnitID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Jsv-8R-0fv">
-                                <rect key="frame" x="78" y="164" width="165" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="78" y="231" width="165" height="44"/>
                                 <state key="normal" title="Show Interstitial Ad">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="ShowInterstitial:" destination="2" eventType="touchUpInside" id="jpp-mp-0LY"/>
@@ -219,7 +205,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Interstitial Ad" id="byG-uG-tUr"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="button" destination="Jsv-8R-0fv" id="MWX-VP-z82"/>
                         <outlet property="labelAdUnitId" destination="VDz-bb-IgC" id="er3-Eg-5qo"/>
@@ -233,31 +218,6 @@
             <point key="canvasLocation" x="195" y="-367"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="BFExampleAViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BFExampleAViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="ShowInterstitial:"/>
-                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="labelAdUnitId" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelAppId" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="textAdUnitId" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textAppId" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="BFExampleBViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BFExampleBViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="ShowInterstitial:"/>
-                <relationship kind="outlet" name="button" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="labelAdUnitId" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelAppId" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="playerArea" candidateClass="UIView"/>
-                <relationship kind="outlet" name="textAdUnitId" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="textAppId" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

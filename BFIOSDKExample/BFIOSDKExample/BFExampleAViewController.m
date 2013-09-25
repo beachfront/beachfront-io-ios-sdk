@@ -38,6 +38,9 @@
 {
     [super viewDidLoad];
     
+    if([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(interstitialOpened:)
                                                  name:BFAdInterstitialOpenedNotification

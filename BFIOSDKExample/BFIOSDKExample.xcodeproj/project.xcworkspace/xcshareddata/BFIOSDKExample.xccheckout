@@ -2,37 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>81D6571F-9C4D-4566-9943-D746E5D2F0EF</string>
+	<string>66DFA67E-1778-4FFC-ACF9-66F986EB9CC1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BFIOSDKExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</key>
-		<string>https://github.com/mefeedia/beachfront-IO.git</string>
+		<key>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</key>
+		<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>bfio-ios-sample/BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
+	<string>BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</key>
-		<string>../../../..</string>
+		<key>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/mefeedia/beachfront-IO.git</string>
+	<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</string>
+	<string>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CF9999E8-CBE9-4C98-8EB1-2B23CB4E3F5A</string>
+			<string>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>beachfront-IO</string>
+			<string>public-beachfrontio-ios-sdk</string>
 		</dict>
 	</array>
 </dict>

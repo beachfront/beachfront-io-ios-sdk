@@ -87,6 +87,11 @@ The duration of the advertisement.
 @property (readonly, nonatomic)         NSInteger duration;
 
 /**
+ Time in seconds until the close button appears
+ */
+@property (readonly, nonatomic) NSInteger closeDelay;
+
+/**
 Whether the Ad is Interactive
 */
 @property (readonly, nonatomic)         BOOL isInteractive;
@@ -100,5 +105,8 @@ An array of Interactive Items for Interactive Ads
 The URL to the background image of the Interactive Ad
 */
 @property (readonly, nonatomic, strong) NSDictionary *interactiveBackground;
+
+
+
 
 @end
