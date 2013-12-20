@@ -14,6 +14,7 @@
 #import <BFIOSDK/BFInterstitialViewController.h>
 #import <BFIOSDK/BFPrerollView.h>
 #import <BFIOSDK/BFHTTPRequestOperation.h>
+#import <AdSupport/ASIdentifierManager.h>
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
