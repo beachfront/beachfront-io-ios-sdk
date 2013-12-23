@@ -15,6 +15,9 @@
 #import <BFIOSDK/BFPrerollView.h>
 #import <BFIOSDK/BFHTTPRequestOperation.h>
 #import <AdSupport/ASIdentifierManager.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import <CoreTelephony/CTCarrier.h>
+#import "Reachability.h"
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
@@ -23,6 +26,7 @@ extern NSString * const BFAdInterstitialClosedNotification;
 
 extern NSString * const BFAdPrerollStartedNotification;
 extern NSString * const BFAdPrerollCompletedNotification;
+
 
 @interface BFIOSDK : NSObject
 

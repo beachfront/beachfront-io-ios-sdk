@@ -23,6 +23,8 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 	* MediaPlayer.framework
 	* UIKit.framework
 	* AdSupport.framework
+	* CoreTelephony.framework
+	* SystemConfiguration.framework
 7. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
   
 8. Import the framework header wherever you want to show an Ad. 
