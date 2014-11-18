@@ -10,7 +10,6 @@
 		073604201864F2D500D8586A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0736041F1864F2D500D8586A /* AdSupport.framework */; };
 		07387BDE17CC20D100F54866 /* BFExampleBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07387BDD17CC20D100F54866 /* BFExampleBViewController.m */; };
 		07E15F4117CFE5BA00DBA823 /* BFIOSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E15F3E17CFE5B200DBA823 /* BFIOSDK.framework */; };
-		07E15F4217CFE5CB00DBA823 /* BFIOSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 07E15F4017CFE5B200DBA823 /* BFIOSDK.bundle */; };
 		07F43F8E17CADBC90014F504 /* example.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 07F43F8D17CADBBA0014F504 /* example.m4v */; };
 		5F27EC8A1739499900CC0286 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27EC891739499900CC0286 /* UIKit.framework */; };
 		5F27EC8C1739499900CC0286 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27EC8B1739499900CC0286 /* Foundation.framework */; };
@@ -25,6 +24,7 @@
 		5F27ECA61739499900CC0286 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ECA41739499900CC0286 /* MainStoryboard_iPad.storyboard */; };
 		5F27ECA91739499900CC0286 /* BFExampleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27ECA81739499900CC0286 /* BFExampleAViewController.m */; };
 		5F27ECE91739E69100CC0286 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27ECE81739E69100CC0286 /* MediaPlayer.framework */; };
+		772F76AE1A1A4BB2002D36AA /* BFIOSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		07387BDC17CC20D100F54866 /* BFExampleBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFExampleBViewController.h; sourceTree = "<group>"; };
 		07387BDD17CC20D100F54866 /* BFExampleBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFExampleBViewController.m; sourceTree = "<group>"; };
 		07E15F3E17CFE5B200DBA823 /* BFIOSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFIOSDK.framework; sourceTree = "<group>"; };
-		07E15F4017CFE5B200DBA823 /* BFIOSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BFIOSDK.bundle; sourceTree = "<group>"; };
 		07F43F8D17CADBBA0014F504 /* example.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.m4v; sourceTree = "<group>"; };
 		5F27EC861739499900CC0286 /* BFIOSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFIOSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F27EC891739499900CC0286 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -52,6 +51,7 @@
 		5F27ECA71739499900CC0286 /* BFExampleAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFExampleAViewController.h; sourceTree = "<group>"; };
 		5F27ECA81739499900CC0286 /* BFExampleAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFExampleAViewController.m; sourceTree = "<group>"; };
 		5F27ECE81739E69100CC0286 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BFIOSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,19 +74,11 @@
 		07E15F3D17CFE5B200DBA823 /* BFIOSDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
+				772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */,
 				07E15F3E17CFE5B200DBA823 /* BFIOSDK.framework */,
-				07E15F3F17CFE5B200DBA823 /* Resources */,
 			);
 			name = BFIOSDK.embeddedframework;
 			path = ../BFIOSDK.embeddedframework;
-			sourceTree = "<group>";
-		};
-		07E15F3F17CFE5B200DBA823 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				07E15F4017CFE5B200DBA823 /* BFIOSDK.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5F27EC7D1739499900CC0286 = {
@@ -202,7 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E15F4217CFE5CB00DBA823 /* BFIOSDK.bundle in Resources */,
+				772F76AE1A1A4BB2002D36AA /* BFIOSDK.bundle in Resources */,
 				5F27EC941739499900CC0286 /* InfoPlist.strings in Resources */,
 				5F27EC9C1739499900CC0286 /* Default.png in Resources */,
 				5F27EC9E1739499900CC0286 /* Default@2x.png in Resources */,

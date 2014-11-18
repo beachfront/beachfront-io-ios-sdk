@@ -17,15 +17,17 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
-#import "Reachability.h"
+#import "BF_Reachability.h"
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
 extern NSString * const BFAdInterstitialCompletedNotification;
 extern NSString * const BFAdInterstitialClosedNotification;
+extern NSString * const BFAdInterstitialFailedNotification;
 
 extern NSString * const BFAdPrerollStartedNotification;
 extern NSString * const BFAdPrerollCompletedNotification;
+extern NSString * const BFAdPrerollFailedNotification;
 
 
 @interface BFIOSDK : NSObject
@@ -38,6 +40,11 @@ extern NSString * const BFAdPrerollCompletedNotification;
  */
 + (void) showInterstitialAdWithAppID:(NSString *)appID
                             adUnitID:(NSString *)adUnitID;
++ (void) showInterstitialAdWithAppID:(NSString *)appID
+                            adUnitID:(NSString *)adUnitID
+                         userGender :(NSString*)gender
+                             userAge:(NSInteger)age;
+
 
 
 /**
@@ -50,6 +57,13 @@ extern NSString * const BFAdPrerollCompletedNotification;
                       inRect:(CGRect)rect
                        AppID:(NSString *)appID
                     adUnitID:(NSString *)adUnitID;
++ (void) showPrerollAdInView:(UIView*)view
+                      inRect:(CGRect)rect
+                       AppID:(NSString *)appID
+                    adUnitID:(NSString *)adUnitID
+                 userGender :(NSString*)gender
+                     userAge:(NSInteger)age;
+
 
 
 /**

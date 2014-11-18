@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>66DFA67E-1778-4FFC-ACF9-66F986EB9CC1</string>
+	<string>12443681-832B-4364-9A18-1C3EF0720AC0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BFIOSDKExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</key>
-		<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+		<key>299D50BD6B9E8AC4A997F677761A998F90E97DE2</key>
+		<string>https://github.com/beachfront/beachfront-io-ios-sdk</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BFIOSDKExample/BFIOSDKExample.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</key>
+		<key>299D50BD6B9E8AC4A997F677761A998F90E97DE2</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/beachfront/beachfront-io-ios-sdk.git</string>
+	<string>https://github.com/beachfront/beachfront-io-ios-sdk</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</string>
+	<string>299D50BD6B9E8AC4A997F677761A998F90E97DE2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>59B25226-1202-4C48-99F1-DD0AC9CA7DC9</string>
+			<string>299D50BD6B9E8AC4A997F677761A998F90E97DE2</string>
 			<key>IDESourceControlWCCName</key>
-			<string>public-beachfrontio-ios-sdk</string>
+			<string>beachfrontio-ios-sdk</string>
 		</dict>
 	</array>
 </dict>

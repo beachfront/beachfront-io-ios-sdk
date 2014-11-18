@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gjW-0v-YOg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gjW-0v-YOg">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - BFIO Examples-->
+        <!--BFIO Examples-->
         <scene sceneID="aNi-Ys-5Eq">
             <objects>
                 <tableViewController id="ten-E0-rKT" sceneMemberID="viewController">
@@ -81,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="-992" y="-6"/>
         </scene>
-        <!--ExampleB View Controller - Preroll Ad-->
+        <!--Preroll Ad-->
         <scene sceneID="HjV-bZ-2ke">
             <objects>
                 <viewController id="GjE-dG-Ch2" customClass="BFExampleBViewController" sceneMemberID="viewController">
@@ -89,14 +88,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b780ee34-2d18-4913-8582-e762486b86d3" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="8k7-pz-V0T">
-                                <rect key="frame" x="20" y="296" width="289" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="57d0480b-3784-4741-e240-fb9d67e4b131" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="8k7-pz-V0T">
+                                <rect key="frame" x="20" y="296" width="298" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AppID" label="AppID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4924822d-0324-47e1-eb44-de8d683cf517" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="8RQ-Oh-bWf">
-                                <rect key="frame" x="20" y="391.5" width="287" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="43577eec-b857-4050-c716-7759958d1642" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="8RQ-Oh-bWf">
+                                <rect key="frame" x="20" y="391" width="299" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AdUnitID" label="AdUnitID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -155,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="195" y="347"/>
         </scene>
-        <!--ExampleA View Controller - Interstitial Ad-->
+        <!--Interstitial Ad-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="BFExampleAViewController" sceneMemberID="viewController">
@@ -166,14 +165,14 @@
                             <userLayoutGuide location="160" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="b780ee34-2d18-4913-8582-e762486b86d3" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="Iqr-K7-K4i">
-                                <rect key="frame" x="20" y="59" width="289" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="57d0480b-3784-4741-e240-fb9d67e4b131" borderStyle="roundedRect" placeholder="Enter App ID Here" minimumFontSize="17" id="Iqr-K7-K4i">
+                                <rect key="frame" x="20" y="59" width="298" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AppID" label="AppID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4924822d-0324-47e1-eb44-de8d683cf517" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="O0w-lu-oHw">
-                                <rect key="frame" x="20" y="155.5" width="285" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="43577eec-b857-4050-c716-7759958d1642" borderStyle="roundedRect" placeholder="Enter Ad Unit ID Here" minimumFontSize="17" id="O0w-lu-oHw">
+                                <rect key="frame" x="20" y="155" width="299" height="30"/>
                                 <accessibility key="accessibilityConfiguration" hint="AdUnitID" label="AdUnitID"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
