@@ -17,7 +17,8 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
-#import "BF_Reachability.h"
+#import <BFIOSDK/BF_Reachability.h>
+//#import "BF_Reachability.h"
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
