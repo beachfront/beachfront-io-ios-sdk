@@ -18,7 +18,6 @@
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <BFIOSDK/BF_Reachability.h>
-//#import "BF_Reachability.h"
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
@@ -43,10 +42,13 @@ extern NSString * const BFAdPrerollFailedNotification;
                             adUnitID:(NSString *)adUnitID;
 + (void) showInterstitialAdWithAppID:(NSString *)appID
                             adUnitID:(NSString *)adUnitID
-                         userGender :(NSString*)gender
+                          userGender:(NSString*)gender
                              userAge:(NSInteger)age;
++ (void) showInterstitialAdWithAppID:(NSString *)appID
+                            adUnitID:(NSString *)adUnitID
+                    additionalParams:(NSDictionary*)addParams;
 
-
+#pragma mark -
 
 /**
  Shows a preroll ad
@@ -62,10 +64,15 @@ extern NSString * const BFAdPrerollFailedNotification;
                       inRect:(CGRect)rect
                        AppID:(NSString *)appID
                     adUnitID:(NSString *)adUnitID
-                 userGender :(NSString*)gender
+                  userGender:(NSString*)gender
                      userAge:(NSInteger)age;
++ (void) showPrerollAdInView:(UIView*)view
+                      inRect:(CGRect)rect
+                       AppID:(NSString *)appID
+                    adUnitID:(NSString *)adUnitID
+            additionalParams:(NSDictionary*)addParams;
 
-
+#pragma mark -
 
 /**
  (Deprecated)
