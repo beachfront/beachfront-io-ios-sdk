@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Beachfront Media, LLC. All rights reserved.
 //
 
-#import <BFIOSDK/BFIOSDK.h>
+#import "BFIOSDK.h"
 
 /**
  This category adds methods to the UIKit framework's `UIImageView` class. The methods in this category provide support for loading remote images asynchronously from a URL.

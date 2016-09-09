@@ -23,30 +23,40 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+//#import "AGWindowViewDefines.h"
+
+#if !TARGET_OS_TV
+typedef NS_OPTIONS(NSUInteger, BF_AGInterfaceOrientationMask) {
+    BF_AGInterfaceOrientationMaskPortrait = (1 << UIInterfaceOrientationPortrait),
+    BF_AGInterfaceOrientationMaskLandscapeLeft = (1 << UIInterfaceOrientationLandscapeLeft),
+    BF_AGInterfaceOrientationMaskLandscapeRight = (1 << UIInterfaceOrientationLandscapeRight),
+    BF_AGInterfaceOrientationMaskPortraitUpsideDown = (1 << UIInterfaceOrientationPortraitUpsideDown),
+    BF_AGInterfaceOrientationMaskLandscape = (BF_AGInterfaceOrientationMaskLandscapeLeft | BF_AGInterfaceOrientationMaskLandscapeRight),
+    BF_AGInterfaceOrientationMaskAll = (BF_AGInterfaceOrientationMaskPortrait | BF_AGInterfaceOrientationMaskLandscapeLeft | BF_AGInterfaceOrientationMaskLandscapeRight | BF_AGInterfaceOrientationMaskPortraitUpsideDown),
+    BF_AGInterfaceOrientationMaskAllButUpsideDown = (BF_AGInterfaceOrientationMaskPortrait | BF_AGInterfaceOrientationMaskLandscapeLeft | BF_AGInterfaceOrientationMaskLandscapeRight),
+};
+#endif
 
 /**
- * @class AGWindowView
+ * @class BF_AGWindowView
  * @description A view which is added to a UIWindow. It will automatically fill window and rotate along with statusbar rotations.
  */
 
 @interface BF_AGWindowView : UIView
 
-@property (nonatomic, assign) UIInterfaceOrientationMask supportedInterfaceOrientations;
-
+#if !TARGET_OS_TV
+@property (nonatomic, assign) BF_AGInterfaceOrientationMask supportedInterfaceOrientations;
+#endif
 /**
  * @property UIViewController *controller. Convinience for having a strong reference to your controller.
  */
 @property (nonatomic, strong) UIViewController *controller;
 @property (nonatomic, copy) void (^onDidMoveToWindow)(void);
 @property (nonatomic, copy) void (^onDidMoveOutOfWindow)(void);
-
-@property (nonatomic) BOOL overlapStatusBar;
+@property (nonatomic, assign) BOOL onlySubviewsCapturesTouch;
 
 - (id)initAndAddToWindow:(UIWindow *)window;
-- (id)initAndAddToWindow:(UIWindow *)window overlayStatusBar:(BOOL)overlayStatusBar;
-
 - (id)initAndAddToKeyWindow;
-- (id)initAndAddToKeyWindowAndOverlayStatusBar;
 
 - (void)addSubViewAndKeepSamePosition:(UIView *)view;
 - (void)addSubviewAndFillBounds:(UIView *)view;
@@ -64,11 +74,13 @@
 
 @end
 
-@interface AGWindowViewHelper : NSObject
+@interface BF_AGWindowViewHelper : NSObject
 
+#if !TARGET_OS_TV
 BOOL UIInterfaceOrientationsIsForSameAxis(UIInterfaceOrientation o1, UIInterfaceOrientation o2);
 CGFloat UIInterfaceOrientationAngleBetween(UIInterfaceOrientation o1, UIInterfaceOrientation o2);
 CGFloat UIInterfaceOrientationAngleOfOrientation(UIInterfaceOrientation orientation);
-UIInterfaceOrientationMask UIInterfaceOrientationMaskFromOrientation(UIInterfaceOrientation orientation);
+BF_AGInterfaceOrientationMask BF_AGInterfaceOrientationMaskFromOrientation(UIInterfaceOrientation orientation);
+#endif
 
 @end

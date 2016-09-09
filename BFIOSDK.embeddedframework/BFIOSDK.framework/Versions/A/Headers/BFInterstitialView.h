@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <BFIOSDK/BFAdResponse.h>
+#import "BFAdResponse.h"
+#import "BFVideoAdView.h"
 
 @protocol BFInterstitialViewDelegate;
 
-@interface BFInterstitialView : UIView
+@interface BFInterstitialView : BFVideoAdView
 /**
  Initializes and returns a newly allocated  BFInterstitialViewController Object
 
@@ -29,17 +30,9 @@
  */
 -(void)dismiss;
 /**
- Call this method to pause the video.
- */
--(void)pause;
-/**
- Call this method to stop the video.
- */
--(void)stop;
-/**
  The ad response object that was passed during initialization
  */
-@property (nonatomic, strong, readonly)     BFAdResponse* adResponse;
+//@property (nonatomic, strong, readonly)     BFAdResponse* adResponse;
 /**
  The delegate for this view
  */

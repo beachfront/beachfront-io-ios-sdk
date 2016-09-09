@@ -9,15 +9,18 @@
 #import <Foundation/Foundation.h>
 
 //BFIOSSDK
-#import <BFIOSDK/BFAdResponse.h>
-#import <BFIOSDK/BFInterstitialView.h>
-#import <BFIOSDK/BFInterstitialViewController.h>
-#import <BFIOSDK/BFPrerollView.h>
-#import <BFIOSDK/BFHTTPRequestOperation.h>
+#import "BFAdResponse.h"
+#import "BFInterstitialView.h"
+//#import <BFIOSDK/BFInterstitialViewController.h>
+#import "BFPrerollView.h"
+#import "BFHTTPRequestOperation.h"
 #import <AdSupport/ASIdentifierManager.h>
+#import "BF_Reachability.h"
+
+#if !TARGET_OS_TV
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
-#import <BFIOSDK/BF_Reachability.h>
+#endif
 
 extern NSString * const BFAdInterstitialOpenedNotification;
 extern NSString * const BFAdInterstitialStartedNotification;
@@ -73,6 +76,24 @@ extern NSString * const BFAdPrerollFailedNotification;
             additionalParams:(NSDictionary*)addParams;
 
 #pragma mark -
++ (void) getInFeedAdInView:(UIView*)view
+                    inRect:(CGRect)rect
+                     AppID:(NSString *)appID
+                  adUnitID:(NSString *)adUnitID
+                userGender:(NSString*)gender
+                   userAge:(NSInteger)age
+                   success:(void (^)(BFPrerollView* inFeedAd))success
+                   failure:(void (^)(NSError *error))failure;
+
++ (void) refreshInFeedAd:(BFPrerollView*) preroll
+                   AppID:(NSString *)appID
+                adUnitID:(NSString *)adUnitID
+              userGender:(NSString*)gender
+                 userAge:(NSInteger)age
+                 success:(void (^)(BFPrerollView* inFeedAd))success
+                 failure:(void (^)(NSError *error))failure;
+
+#pragma mark -
 
 /**
  (Deprecated)
@@ -82,6 +103,7 @@ extern NSString * const BFAdPrerollFailedNotification;
  */
 + (void) showAdWithAppID:(NSString *)appID
                 adUnitID:(NSString *)adUnitID;
+
 
 
 

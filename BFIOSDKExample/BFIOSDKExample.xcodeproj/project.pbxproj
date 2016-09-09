@@ -25,6 +25,7 @@
 		5F27ECA91739499900CC0286 /* BFExampleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27ECA81739499900CC0286 /* BFExampleAViewController.m */; };
 		5F27ECE91739E69100CC0286 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27ECE81739E69100CC0286 /* MediaPlayer.framework */; };
 		772F76AE1A1A4BB2002D36AA /* BFIOSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */; };
+		776A4D6C1D82D39200840483 /* BFExampleCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A4D6B1D82D39200840483 /* BFExampleCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		5F27ECA81739499900CC0286 /* BFExampleAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFExampleAViewController.m; sourceTree = "<group>"; };
 		5F27ECE81739E69100CC0286 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BFIOSDK.bundle; sourceTree = "<group>"; };
+		776A4D6A1D82D39200840483 /* BFExampleCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFExampleCViewController.h; sourceTree = "<group>"; };
+		776A4D6B1D82D39200840483 /* BFExampleCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFExampleCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				5F27ECA81739499900CC0286 /* BFExampleAViewController.m */,
 				07387BDC17CC20D100F54866 /* BFExampleBViewController.h */,
 				07387BDD17CC20D100F54866 /* BFExampleBViewController.m */,
+				776A4D6A1D82D39200840483 /* BFExampleCViewController.h */,
+				776A4D6B1D82D39200840483 /* BFExampleCViewController.m */,
 				5F27EC901739499900CC0286 /* Supporting Files */,
 			);
 			path = BFIOSDKExample;
@@ -214,6 +219,7 @@
 			files = (
 				5F27EC961739499900CC0286 /* main.m in Sources */,
 				5F27EC9A1739499900CC0286 /* BFMAppDelegate.m in Sources */,
+				776A4D6C1D82D39200840483 /* BFExampleCViewController.m in Sources */,
 				5F27ECA91739499900CC0286 /* BFExampleAViewController.m in Sources */,
 				07387BDE17CC20D100F54866 /* BFExampleBViewController.m in Sources */,
 			);
@@ -323,8 +329,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFIOSDKExample/BFIOSDKExample-Prefix.pch";
 				INFOPLIST_FILE = "BFIOSDKExample/BFIOSDKExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bfmedia.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -344,8 +351,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFIOSDKExample/BFIOSDKExample-Prefix.pch";
 				INFOPLIST_FILE = "BFIOSDKExample/BFIOSDKExample-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bfmedia.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

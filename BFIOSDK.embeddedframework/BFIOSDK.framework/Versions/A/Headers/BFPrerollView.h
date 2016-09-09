@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <BFIOSDK/BFAdResponse.h>
+#import "BFAdResponse.h"
+#import "BFVideoAdView.h"
 
 @protocol BFPrerollViewDelegate;
 
-@interface BFPrerollView : UIView
+@interface BFPrerollView : BFVideoAdView
 /**
  Initializes and returns a newly allocated Object
  
@@ -32,22 +33,21 @@
  Call this method to dismiss the ad view.
  */
 -(void)dismiss;
-/**
- Call this method to pause the video.
- */
+
 -(void)pause;
-/**
- Call this method to stop the video.
- */
--(void)stop;
+-(void)resume;
+-(void)setMuted:(BOOL)muted;
+-(void)closeFullscreen;
+
 /**
  The ad response object that was passed during initialization
  */
-@property (nonatomic, strong, readonly)     BFAdResponse* adResponse;
+//@property (nonatomic, strong, readonly)     BFAdResponse* adResponse;
 /**
  The delegate for this view
  */
 @property (nonatomic, weak,   readwrite)    id<BFPrerollViewDelegate> delegate;
+@property (nonatomic) BOOL isInFeedAd;
 @end
 
 @protocol BFPrerollViewDelegate <NSObject>

@@ -14,14 +14,14 @@ typedef enum {
 } BFAdResponseResult;
 
 
-extern const NSString *kInteractiveTypeTwitter;
-extern const NSString *kInteractiveTypeFacebook;
-extern const NSString *kInteractiveTypeDownload;
-extern const NSString *kInteractiveTypePhone;
-extern const NSString *kInteractiveKeyType;
-extern const NSString *kInteractiveKeyURL;
-extern const NSString *kInteractiveKeyText;
-extern const NSString *kInteractiveKeyTracking;
+extern NSString * const kInteractiveTypeTwitter;
+extern NSString * const kInteractiveTypeFacebook;
+extern NSString * const kInteractiveTypeDownload;
+extern NSString * const kInteractiveTypePhone;
+extern NSString * const kInteractiveKeyType;
+extern NSString * const kInteractiveKeyURL;
+extern NSString * const kInteractiveKeyText;
+extern NSString * const kInteractiveKeyTracking;
 
 @interface BFAdResponse : NSObject
 /**
