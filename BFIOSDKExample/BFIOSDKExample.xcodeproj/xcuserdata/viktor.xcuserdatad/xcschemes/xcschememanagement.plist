@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BFIOTVSDKExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>5F27EC851739499900CC0286</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7766A4221ECD8A02001C3F6D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

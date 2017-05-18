@@ -11,9 +11,7 @@
 @interface BFExampleBViewController : UIViewController
 - (IBAction)ShowInterstitial:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textAppId;
-@property (weak, nonatomic) IBOutlet UITextField *textAdUnitId;
 @property (weak, nonatomic) IBOutlet UILabel     *labelAppId;
-@property (weak, nonatomic) IBOutlet UILabel     *labelAdUnitId;
 @property (weak, nonatomic) IBOutlet UIView      *playerArea;
 @property (weak, nonatomic) IBOutlet UIButton    *button;
 @end

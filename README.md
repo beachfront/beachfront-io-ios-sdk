@@ -1,29 +1,28 @@
 
 # Guide
-Beachfront.io is the easist way monetize your app using Interstitial and Preroll Video Ads. This document shows you how to integrate Beachfront.io into your iOS app.
+Beachfront.io is the easist way monetize your app using Interstitial and Preroll Video Ads. This document shows you how to integrate Beachfront.io into your iOS or tvOS app.
 
 
 
 ## What You'll Need
 * Xcode version 5.0 or higher
-* An iOS app targeting at least iOS version 6.0
+* An iOS app targeting at least iOS version 6.0 (tvOS 9.0 or higher)
 
 
 ## Installing the SDK
 
 1. [Get a Beachfront.io account](http://beachfront.io/join) if you don't already have one.
 2. Login to the [dashboard](http://beachfront.io/) and create a new app.
-3. Click 'Edit App' and you will see your App ID & Ad Unit Id (copy for later).
+3. Click 'Edit App' and you will see your App ID (copy for later).
 3. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
 4. In the "Build Phases" section of your project target, navigate to "Copy Bundle Resources" and make sure 'BFIOSDK.bundle' is listed. If not, find it under the Resources folder in BFIOSDK.embeddedframework and drag it in.
-5. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework to the list (if not already there).
+5. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework (BFIOTVSDK.framework for tvOS) to the list (if not already there).
 6. While you're still in "Link Binary with Libraries" add the frameworks:
 	* Foundation.framework
 	* CoreGraphics.framework
-	* MediaPlayer.framework
 	* UIKit.framework
 	* AdSupport.framework
-	* CoreTelephony.framework
+	* CoreTelephony.framework (for iOS)
 	* SystemConfiguration.framework
 7. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
   
@@ -36,30 +35,29 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 
 
 
-## Showing Interstitial Ads
+## Showing Interstitial Ads (iOS)
 
 Whenever you want to show an Interstitial Video Ad use the following method call:    
 
 ```
-[BFIOSDK showAdWithAppID:@"yourAppID" adUnitID:@"yourAdUnitID"];
+[BFIOSDK showAdWithAppID:@"yourAppID"];
 ```
 
 
 
-## Showing Preroll Ads
+## Showing Preroll Ads (iOS or tvOS)
 
 Whenever you want to show a Preroll Video Ad use the following method call:    
 
 ```
     [BFIOSDK showPrerollAdInView:self.view
                           inRect:_yourPlayer.view.frame
-                           AppID:@"yourAppID"
-                        adUnitID:@"yourAdUnitID"];
+                           AppID:@"yourAppID"];
 ```
 
     
     
-## Showing In-Feed Ads
+## Showing In-Feed Ads (iOS)
 
 Beachfront.IO In-Feed is a new native ad unit (requires iOS 6.0 and above) that allows you to blend Beachfront.io ads directly into your app’s content, closely matching the form and function of your existing user experience.
 
@@ -68,8 +66,8 @@ In-Feed ads consist user experience is triggered if a user taps on the video con
 ###Instructions###
 Once you've performed the required [[Xcode Project Setup]], you can display an Beachfront.IO In-Feed ads in your app by the following steps:
 
-1. Create or sign into your [Beachfront.IO account](http://platform.beachfront.io/en/login/) and retrieve the Beachfront.IO app ID and Beachfront.IO Ad Unit IDs for your app. For help, see [Beachfront.IO FAQ](http://beachfront.io/faq/).
-2. Add code that runs on app launch to configure Beachfront.IO with your app ID and Ad Unit ID.
+1. Create or sign into your [Beachfront.IO account](http://platform.beachfront.io/en/login/) and retrieve the Beachfront.IO app ID for your app. For help, see [Beachfront.IO FAQ](http://beachfront.io/faq/).
+2. Add code that runs on app launch to configure Beachfront.IO with your app ID.
 3. Add code to retrieve an `BFPrerollView` object, and insert it into your native user interface placement.
 4. Insert a sponsored content indicator into your placement.
 5. Ensure that the native ad will pause and resume properly.
@@ -83,7 +81,7 @@ Once you've performed the required [[Xcode Project Setup]], you can display an B
 /* Class body ... */
 
 - (void)getInFeedAd {
-    [BFIOSDK getInFeedAdInView:self.view inRect:CGRectMake(0, 0, 320, 180) AppID:YOUR_APP_ID adUnitID:YOUR_AD_UNIT_ID userGender:nil userAge:0 success:^(BFPrerollView *inFeedAd) {
+    [BFIOSDK getInFeedAdInView:self.view inRect:CGRectMake(0, 0, 320, 180) AppID:YOUR_APP_ID userGender:nil userAge:0 success:^(BFPrerollView *inFeedAd) {
 	[self.view addSubview: inFeedAd]; // insert In-Feed Ad to your view
 	[inFeedAd resume]; // play video Ad
         
@@ -91,7 +89,7 @@ Once you've performed the required [[Xcode Project Setup]], you can display an B
         // error handling
     }];
 ```
-This example does a lot of things corresponding to the steps outlined in the instructions. We'll go through them one at a time. First, it requests an `BFPrerollView` object using `[BFIOSDK getInFeedAdInView:inRect:AppID:adUnitID:userGender:userAge:success:failure:]`. You must pass a pointer to your UIViewController in which you will display the ad; in this example, that's `self.view`. It's important to note that Beachfront.IO will sometimes return `nil` from this method when ads are not available, so your code _must_ be able to deal with this scenario. We recommend handling it by laying out your user interface as if there was no intention to display an ad. Do not leave a blank space in your user interface where the ad would have been displayed.
+This example does a lot of things corresponding to the steps outlined in the instructions. We'll go through them one at a time. First, it requests an `BFPrerollView` object using `[BFIOSDK getInFeedAdInView:inRect:AppID:userGender:userAge:success:failure:]`. You must pass a pointer to your UIViewController in which you will display the ad; in this example, that's `self.view`. It's important to note that Beachfront.IO will sometimes return `nil` from this method when ads are not available, so your code _must_ be able to deal with this scenario. We recommend handling it by laying out your user interface as if there was no intention to display an ad. Do not leave a blank space in your user interface where the ad would have been displayed.
 
 Lastly, the example sets a frame size for the native ad in preparation to insert it into the user interface. The `BFPrerollView` is a subclass of `UIView` that includes all the necessary machinery to display the video component of the advertisement and the engagement button, so it's important that it is sized well. Once this is done, your simply insert the `BFPrerollView` into the user interface alongside any other required `UILabel`s or `UIImageView`s that you need to display the rest of the ad content.
 
@@ -153,7 +151,7 @@ We recommend that you store pointers to any `BFPrerollView`s you create in an ar
 --
 
 **In-Feed Ad reuse**  
-You can reuse/refresh `BFPrerollView` by using [BFIOSDK refreshInFeedAd:AppID:adUnitID:userGender: userAge:success]. It is resets the In-Feed View, so you do not need to remove the old and create new BFPrerollView. 
+You can reuse/refresh `BFPrerollView` by using [BFIOSDK refreshInFeedAd:AppID:userGender: userAge:success]. It is resets the In-Feed View, so you do not need to remove the old and create new BFPrerollView. 
 
 ```objc
 #import <BFIOSDK/BFIOSDK.h>
@@ -162,7 +160,7 @@ You can reuse/refresh `BFPrerollView` by using [BFIOSDK refreshInFeedAd:AppID:ad
 /* Class body ... */
 
 - (void)refreshInFeedAd {
-    [BFIOSDK refreshInFeedAd: adView AppID:YOUR_APP_ID adUnitID:YOUR_AD_UNIT_ID userGender:nil userAge:0 success:^(BFPrerollView *inFeedAd) {
+    [BFIOSDK refreshInFeedAd: adView AppID:YOUR_APP_ID userGender:nil userAge:0 success:^(BFPrerollView *inFeedAd) {
         
 		[adView resume]; // play video Ad
         

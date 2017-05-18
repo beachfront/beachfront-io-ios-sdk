@@ -71,8 +71,7 @@
 ////////////////////////////////////////////////////////////////////////////////////
 - (IBAction)ShowInterstitial:(id)sender {
     
-    [BFIOSDK showInterstitialAdWithAppID:_textAppId.text
-                                adUnitID:_textAdUnitId.text];
+    [BFIOSDK showInterstitialAdWithAppID:_textAppId.text];
 }
 
 - (void)disablePrerollButton
@@ -105,17 +104,8 @@
                                        _labelAppId.frame.size.width,
                                        _labelAppId.frame.size.height);
         
-        // position the text field
-        _textAdUnitId.center = CGPointMake(self.view.center.x, _textAppId.center.y + spacing);
-        
-        // position the label
-        _labelAdUnitId.frame = CGRectMake(_textAdUnitId.frame.origin.x,
-                                          _textAdUnitId.frame.origin.y - _labelAdUnitId.frame.size.height,
-                                          _labelAdUnitId.frame.size.width,
-                                          _labelAdUnitId.frame.size.height);
-        
         // position the button
-        _button.center = CGPointMake(self.view.center.x, _textAdUnitId.center.y + spacing);
+        _button.center = CGPointMake(self.view.center.x, _textAppId.center.y + spacing);
         
 }
 

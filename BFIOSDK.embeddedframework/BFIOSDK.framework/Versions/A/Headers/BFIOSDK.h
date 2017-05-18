@@ -39,16 +39,12 @@ extern NSString * const BFAdPrerollFailedNotification;
 /**
  Shows an interstitial ad in fullscreen
  @param appID The App ID
- @param success The Ad Unit ID
  */
++ (void) showInterstitialAdWithAppID:(NSString *)appID;
 + (void) showInterstitialAdWithAppID:(NSString *)appID
-                            adUnitID:(NSString *)adUnitID;
-+ (void) showInterstitialAdWithAppID:(NSString *)appID
-                            adUnitID:(NSString *)adUnitID
                           userGender:(NSString*)gender
                              userAge:(NSInteger)age;
 + (void) showInterstitialAdWithAppID:(NSString *)appID
-                            adUnitID:(NSString *)adUnitID
                     additionalParams:(NSDictionary*)addParams;
 
 #pragma mark -
@@ -57,29 +53,24 @@ extern NSString * const BFAdPrerollFailedNotification;
  Shows a preroll ad
  @param rect The display rect of the video player
  @param appID The App ID
- @param success The Ad Unit ID
  */
 + (void) showPrerollAdInView:(UIView*)view
                       inRect:(CGRect)rect
-                       AppID:(NSString *)appID
-                    adUnitID:(NSString *)adUnitID;
+                       AppID:(NSString *)appID;
 + (void) showPrerollAdInView:(UIView*)view
                       inRect:(CGRect)rect
                        AppID:(NSString *)appID
-                    adUnitID:(NSString *)adUnitID
                   userGender:(NSString*)gender
                      userAge:(NSInteger)age;
 + (void) showPrerollAdInView:(UIView*)view
                       inRect:(CGRect)rect
                        AppID:(NSString *)appID
-                    adUnitID:(NSString *)adUnitID
             additionalParams:(NSDictionary*)addParams;
 
 #pragma mark -
 + (void) getInFeedAdInView:(UIView*)view
                     inRect:(CGRect)rect
                      AppID:(NSString *)appID
-                  adUnitID:(NSString *)adUnitID
                 userGender:(NSString*)gender
                    userAge:(NSInteger)age
                    success:(void (^)(BFPrerollView* inFeedAd))success
@@ -87,7 +78,6 @@ extern NSString * const BFAdPrerollFailedNotification;
 
 + (void) refreshInFeedAd:(BFPrerollView*) preroll
                    AppID:(NSString *)appID
-                adUnitID:(NSString *)adUnitID
               userGender:(NSString*)gender
                  userAge:(NSInteger)age
                  success:(void (^)(BFPrerollView* inFeedAd))success
@@ -99,10 +89,8 @@ extern NSString * const BFAdPrerollFailedNotification;
  (Deprecated)
  Shows an advertisement in a modal view
  @param appID The App ID
- @param success The Ad Unit ID
  */
-+ (void) showAdWithAppID:(NSString *)appID
-                adUnitID:(NSString *)adUnitID;
++ (void) showAdWithAppID:(NSString *)appID;
 
 
 

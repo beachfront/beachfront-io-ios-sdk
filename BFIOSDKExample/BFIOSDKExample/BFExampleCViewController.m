@@ -28,7 +28,7 @@
     
     __weak BFExampleCViewController* weakSelf = self;
     
-    [BFIOSDK getInFeedAdInView:self.tableView inRect:CGRectMake(0, 180, _tableView.frame.size.width, 180) AppID:_appIdTextField.text adUnitID:_adUnitIdTextField.text userGender:nil userAge:0 success:^(BFPrerollView *preroll) {
+    [BFIOSDK getInFeedAdInView:self.tableView inRect:CGRectMake(0, 180, _tableView.frame.size.width, 180) AppID:_appIdTextField.text userGender:nil userAge:0 success:^(BFPrerollView *preroll) {
         
         weakSelf.ad = preroll;
         [weakSelf.tableView addSubview:weakSelf.ad];
@@ -52,34 +52,13 @@
 }
 - (IBAction)refreshAdAction:(UIButton *)sender
 {
-    [BFIOSDK refreshInFeedAd:_ad AppID:_appIdTextField.text adUnitID:_adUnitIdTextField.text userGender:nil userAge:0 success:^(BFPrerollView *preroll) {
+    [BFIOSDK refreshInFeedAd:_ad AppID:_appIdTextField.text userGender:nil userAge:0 success:^(BFPrerollView *preroll) {
         
         [_ad setFrame:CGRectMake(0, 180, _tableView.frame.size.width, 180)];
-        
         [_hideCellIndexPaths removeAllObjects];
-        
         [_tableView beginUpdates];
         [_tableView endUpdates];
-        
-//        if ([_tableView.indexPathsForVisibleRows containsObject:[NSIndexPath indexPathForRow:INDFEED_ROW inSection:0]])
-//            [_ad pause];
-        
-        
-        
-          [_ad resume];
-//         [_ad pause];
-//       
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void){
-//           
-//             [_ad resume];
-//        });
-//        [_ad pause];
-//        [_ad pause];
-        
-   
-       
-       
-   
+        [_ad resume];
         
     } failure:^(NSError *error) {
         
@@ -122,14 +101,6 @@
     if (cell == nil)
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
-//     if (indexPath.row == INDFEED_ROW && ![_hideCellIndexPaths containsObject:indexPath])
-//     {
-//         NSLog(@"indexPath: %@", indexPath);
-//         NSLog(@"1 _ad setFrame %@", NSStringFromCGRect(cell.frame));
-//         [_ad setFrame:cell.frame];
-//         NSLog(@"2  _ad setFrame %@", NSStringFromCGRect(_ad.frame));
-//     }
-    
     [cell.textLabel setTextAlignment:(NSTextAlignmentCenter)];
     [cell.textLabel setText:[NSString stringWithFormat:@"%d", indexPath.row]];
     
@@ -157,9 +128,7 @@
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     
-    
 }
-
 
 - (BOOL)shouldAutorotate
 {

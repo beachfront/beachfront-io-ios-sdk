@@ -18,7 +18,7 @@
 
  This is the designated initializer.
 
- @param dictionary The json dictionary received from the server
+ @param adResponse The json dictionary received from the server
  */
 -(id)initWithAdResponse:(BFAdResponse*)adResponse;
 /**

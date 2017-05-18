@@ -25,6 +25,14 @@
 		5F27ECA91739499900CC0286 /* BFExampleAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F27ECA81739499900CC0286 /* BFExampleAViewController.m */; };
 		5F27ECE91739E69100CC0286 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F27ECE81739E69100CC0286 /* MediaPlayer.framework */; };
 		772F76AE1A1A4BB2002D36AA /* BFIOSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */; };
+		7766A4271ECD8A03001C3F6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7766A4261ECD8A03001C3F6D /* main.m */; };
+		7766A42A1ECD8A03001C3F6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7766A4291ECD8A03001C3F6D /* AppDelegate.m */; };
+		7766A42D1ECD8A03001C3F6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7766A42C1ECD8A03001C3F6D /* ViewController.m */; };
+		7766A4301ECD8A03001C3F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7766A42E1ECD8A03001C3F6D /* Main.storyboard */; };
+		7766A4321ECD8A03001C3F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7766A4311ECD8A03001C3F6D /* Assets.xcassets */; };
+		7766A4381ECD9A2A001C3F6D /* BFIOTVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7766A4371ECD9A2A001C3F6D /* BFIOTVSDK.framework */; };
+		7766A43C1ECDAD4B001C3F6D /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7766A43B1ECDAD4B001C3F6D /* PlayerViewController.m */; };
+		7766A43E1ECDC6A9001C3F6D /* BFIOTVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7766A4371ECD9A2A001C3F6D /* BFIOTVSDK.framework */; };
 		776A4D6C1D82D39200840483 /* BFExampleCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776A4D6B1D82D39200840483 /* BFExampleCViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +61,18 @@
 		5F27ECA81739499900CC0286 /* BFExampleAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFExampleAViewController.m; sourceTree = "<group>"; };
 		5F27ECE81739E69100CC0286 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BFIOSDK.bundle; sourceTree = "<group>"; };
+		7766A4231ECD8A02001C3F6D /* BFIOTVSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFIOTVSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7766A4261ECD8A03001C3F6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7766A4281ECD8A03001C3F6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7766A4291ECD8A03001C3F6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7766A42B1ECD8A03001C3F6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7766A42C1ECD8A03001C3F6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7766A42F1ECD8A03001C3F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7766A4311ECD8A03001C3F6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7766A4331ECD8A03001C3F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7766A4371ECD9A2A001C3F6D /* BFIOTVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BFIOTVSDK.framework; sourceTree = "<group>"; };
+		7766A43A1ECDAD4B001C3F6D /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		7766A43B1ECDAD4B001C3F6D /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		776A4D6A1D82D39200840483 /* BFExampleCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFExampleCViewController.h; sourceTree = "<group>"; };
 		776A4D6B1D82D39200840483 /* BFExampleCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFExampleCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,10 +84,19 @@
 			files = (
 				073604201864F2D500D8586A /* AdSupport.framework in Frameworks */,
 				07E15F4117CFE5BA00DBA823 /* BFIOSDK.framework in Frameworks */,
+				7766A4381ECD9A2A001C3F6D /* BFIOTVSDK.framework in Frameworks */,
 				5F27ECE91739E69100CC0286 /* MediaPlayer.framework in Frameworks */,
 				5F27EC8A1739499900CC0286 /* UIKit.framework in Frameworks */,
 				5F27EC8C1739499900CC0286 /* Foundation.framework in Frameworks */,
 				5F27EC8E1739499900CC0286 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766A4201ECD8A02001C3F6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766A43E1ECDC6A9001C3F6D /* BFIOTVSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +106,7 @@
 		07E15F3D17CFE5B200DBA823 /* BFIOSDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
+				7766A4371ECD9A2A001C3F6D /* BFIOTVSDK.framework */,
 				772F76AD1A1A4BB2002D36AA /* BFIOSDK.bundle */,
 				07E15F3E17CFE5B200DBA823 /* BFIOSDK.framework */,
 			);
@@ -88,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				5F27EC8F1739499900CC0286 /* BFIOSDKExample */,
+				7766A4241ECD8A03001C3F6D /* BFIOTVSDKExample */,
 				5F27EC881739499900CC0286 /* Frameworks */,
 				5F27EC871739499900CC0286 /* Products */,
 			);
@@ -97,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				5F27EC861739499900CC0286 /* BFIOSDKExample.app */,
+				7766A4231ECD8A02001C3F6D /* BFIOTVSDKExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +179,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7766A4241ECD8A03001C3F6D /* BFIOTVSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				7766A43A1ECDAD4B001C3F6D /* PlayerViewController.h */,
+				7766A43B1ECDAD4B001C3F6D /* PlayerViewController.m */,
+				7766A4281ECD8A03001C3F6D /* AppDelegate.h */,
+				7766A4291ECD8A03001C3F6D /* AppDelegate.m */,
+				7766A42B1ECD8A03001C3F6D /* ViewController.h */,
+				7766A42C1ECD8A03001C3F6D /* ViewController.m */,
+				7766A42E1ECD8A03001C3F6D /* Main.storyboard */,
+				7766A4311ECD8A03001C3F6D /* Assets.xcassets */,
+				7766A4331ECD8A03001C3F6D /* Info.plist */,
+				7766A4251ECD8A03001C3F6D /* Supporting Files */,
+			);
+			path = BFIOTVSDKExample;
+			sourceTree = "<group>";
+		};
+		7766A4251ECD8A03001C3F6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7766A4261ECD8A03001C3F6D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +224,23 @@
 			productReference = 5F27EC861739499900CC0286 /* BFIOSDKExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7766A4221ECD8A02001C3F6D /* BFIOTVSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7766A4341ECD8A03001C3F6D /* Build configuration list for PBXNativeTarget "BFIOTVSDKExample" */;
+			buildPhases = (
+				7766A41F1ECD8A02001C3F6D /* Sources */,
+				7766A4201ECD8A02001C3F6D /* Frameworks */,
+				7766A4211ECD8A02001C3F6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFIOTVSDKExample;
+			productName = BFIOTVSDKExample;
+			productReference = 7766A4231ECD8A02001C3F6D /* BFIOTVSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +250,12 @@
 				CLASSPREFIX = BFM;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Beachfront Media, LLC.";
+				TargetAttributes = {
+					7766A4221ECD8A02001C3F6D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 5F27EC811739499900CC0286 /* Build configuration list for PBXProject "BFIOSDKExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -183,6 +263,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5F27EC7D1739499900CC0286;
 			productRefGroup = 5F27EC871739499900CC0286 /* Products */;
@@ -190,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				5F27EC851739499900CC0286 /* BFIOSDKExample */,
+				7766A4221ECD8A02001C3F6D /* BFIOTVSDKExample */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +292,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7766A4211ECD8A02001C3F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766A4321ECD8A03001C3F6D /* Assets.xcassets in Resources */,
+				7766A4301ECD8A03001C3F6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,6 +313,17 @@
 				776A4D6C1D82D39200840483 /* BFExampleCViewController.m in Sources */,
 				5F27ECA91739499900CC0286 /* BFExampleAViewController.m in Sources */,
 				07387BDE17CC20D100F54866 /* BFExampleBViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7766A41F1ECD8A02001C3F6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7766A42D1ECD8A03001C3F6D /* ViewController.m in Sources */,
+				7766A43C1ECDAD4B001C3F6D /* PlayerViewController.m in Sources */,
+				7766A42A1ECD8A03001C3F6D /* AppDelegate.m in Sources */,
+				7766A4271ECD8A03001C3F6D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +352,14 @@
 				5F27ECA51739499900CC0286 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7766A42E1ECD8A03001C3F6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7766A42F1ECD8A03001C3F6D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -322,6 +432,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../BFIOSDK.embeddedframework\"",
@@ -344,6 +455,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../BFIOSDK.embeddedframework\"",
@@ -358,6 +470,89 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7766A4351ECD8A03001C3F6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../BFIOSDK.embeddedframework\"";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = BFIOTVSDKExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bfmedia.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		7766A4361ECD8A03001C3F6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../BFIOSDK.embeddedframework\"";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = BFIOTVSDKExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bfmedia.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -381,6 +576,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		7766A4341ECD8A03001C3F6D /* Build configuration list for PBXNativeTarget "BFIOTVSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7766A4351ECD8A03001C3F6D /* Debug */,
+				7766A4361ECD8A03001C3F6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

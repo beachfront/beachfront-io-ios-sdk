@@ -18,8 +18,8 @@
  
  This is the designated initializer.
  
- @param dictionary The json dictionary received from the server
- @param playerRect The frame of the video player
+ @param adResponse The json dictionary received from the server
+ @param rect The frame of the video player
  */
 -(id)initWithAdResponse:(BFAdResponse*)adResponse
                  inView:(UIView*)view

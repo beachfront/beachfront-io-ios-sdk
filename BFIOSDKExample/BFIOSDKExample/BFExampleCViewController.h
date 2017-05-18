@@ -11,7 +11,6 @@
 @interface BFExampleCViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *appIdTextField;
-@property (weak, nonatomic) IBOutlet UITextField *adUnitIdTextField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *refreshAdBtn;
 
