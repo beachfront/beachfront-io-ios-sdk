@@ -6,7 +6,8 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 
 ## What You'll Need
 * Xcode version 5.0 or higher
-* An iOS app targeting at least iOS version 6.0 (tvOS 9.0 or higher)
+* An iOS app targeting at least iOS version 6.0 (tvOS 9.0 or higher) - obj-c only
+* An iOS app targeting at least iOS version 8.0 (tvOS 9.0 or higher) - both obj-c/swift
 
 
 ## Installing the SDK
@@ -14,22 +15,37 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 1. [Get a Beachfront.io account](http://beachfront.io/join) if you don't already have one.
 2. Login to the [dashboard](http://beachfront.io/) and create a new app.
 3. Click 'Edit App' and you will see your App ID (copy for later).
-3. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
-4. In the "Build Phases" section of your project target, navigate to "Copy Bundle Resources" and make sure 'BFIOSDK.bundle' is listed. If not, find it under the Resources folder in BFIOSDK.embeddedframework and drag it in.
-5. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework (BFIOTVSDK.framework for tvOS) to the list (if not already there).
-6. While you're still in "Link Binary with Libraries" add the frameworks:
+
+#####OLD WAY (BFIOSDK.embeddedframework - obj-c only)#####
+4. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
+5. In the "Build Phases" section of your project target, navigate to "Copy Bundle Resources" and make sure 'BFIOSDK.bundle' is listed. If not, find it under the Resources folder in BFIOSDK.embeddedframework and drag it in.
+6. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework (BFIOTVSDK.framework for tvOS) to the list (if not already there).
+7. While you're still in "Link Binary with Libraries" add the frameworks:
 	* Foundation.framework
 	* CoreGraphics.framework
 	* UIKit.framework
 	* AdSupport.framework
 	* CoreTelephony.framework (for iOS)
 	* SystemConfiguration.framework
-7. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
+8. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
+
+#####NEW WAY (BFIOSDK.framework - both obj-c/swift)#####
+4. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.framework into your Xcode project folder.
+5. General -> Embedded binaries -> add BFIOSDK.framework
+6. Build Phases -> Copy bundle Resources -> add BFIOSDK.framework
+
+ 
+ 
   
-8. Import the framework header wherever you want to show an Ad. 
+Import the framework header wherever you want to show an Ad. 
 
 ```
+// Obj-C
  #import <BFIOSDK/BFIOSDK.h>
+```
+```
+// Swift
+import BFIOSDK 
 ```
 
 
@@ -40,7 +56,12 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 Whenever you want to show an Interstitial Video Ad use the following method call:    
 
 ```
+// Obj-C
 [BFIOSDK showAdWithAppID:@"yourAppID"];
+```
+```
+// Swift
+BFIOSDK.showInterstitialAd(withAppID: "yourAppID")
 ```
 
 
@@ -50,9 +71,14 @@ Whenever you want to show an Interstitial Video Ad use the following method call
 Whenever you want to show a Preroll Video Ad use the following method call:    
 
 ```
+// Obj-C
     [BFIOSDK showPrerollAdInView:self.view
                           inRect:_yourPlayer.view.frame
                            AppID:@"yourAppID"];
+```
+```
+// Swift
+    BFIOSDK.showPrerollAd(in: self.view, in: _yourPlayer.view.frame, appID: "yourAppID")
 ```
 
     
@@ -73,7 +99,9 @@ Once you've performed the required [[Xcode Project Setup]], you can display an B
 5. Ensure that the native ad will pause and resume properly.
 
 ###Code Example - Using the BFPrerollView###
+
 **ViewController.m**
+
 ```objc
 #import <BFIOSDK/BFIOSDK.h>
 
@@ -88,6 +116,20 @@ Once you've performed the required [[Xcode Project Setup]], you can display an B
     } failure:^(NSError *error) {
         // error handling
     }];
+```
+```swift
+import BFIOSDK
+
+class ViewController: UIViewController {
+/* Class body ... */
+
+func getInFeedAd() {
+        BFIOSDK.getInFeedAd(in: self.view, in: CGRect(x:0, y:0, width:320, height:180), appID: "YOUR_APP_ID", userGender: nil, userAge: 0, success: { (inFeedAd) in
+            self.view.addSubview(inFeedAd!) // insert In-Feed Ad to your view
+            inFeedAd?.resume() // play video Ad
+        }) { (error) in
+            // error handling
+        }
 ```
 This example does a lot of things corresponding to the steps outlined in the instructions. We'll go through them one at a time. First, it requests an `BFPrerollView` object using `[BFIOSDK getInFeedAdInView:inRect:AppID:userGender:userAge:success:failure:]`. You must pass a pointer to your UIViewController in which you will display the ad; in this example, that's `self.view`. It's important to note that Beachfront.IO will sometimes return `nil` from this method when ads are not available, so your code _must_ be able to deal with this scenario. We recommend handling it by laying out your user interface as if there was no intention to display an ad. Do not leave a blank space in your user interface where the ad would have been displayed.
 

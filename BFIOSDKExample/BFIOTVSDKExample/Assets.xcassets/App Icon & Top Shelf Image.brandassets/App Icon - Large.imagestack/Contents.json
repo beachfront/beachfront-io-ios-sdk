@@ -4,7 +4,13 @@
       "filename" : "Front.imagestacklayer"
     },
     {
+      "filename" : "MiddleFront.imagestacklayer"
+    },
+    {
       "filename" : "Middle.imagestacklayer"
+    },
+    {
+      "filename" : "BackMiddle.imagestacklayer"
     },
     {
       "filename" : "Back.imagestacklayer"

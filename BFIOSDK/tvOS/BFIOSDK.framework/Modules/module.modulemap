@@ -1,0 +1,6 @@
+framework module BFIOSDK {
+  umbrella header "BFIOSDK.h"
+
+  export *
+  module * { export * }
+}
