@@ -16,23 +16,30 @@ Beachfront.io is the easist way monetize your app using Interstitial and Preroll
 2. Login to the [dashboard](http://beachfront.io/) and create a new app.
 3. Click 'Edit App' and you will see your App ID (copy for later).
 
-#####OLD WAY (BFIOSDK.embeddedframework - obj-c only)#####
-4. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
-5. In the "Build Phases" section of your project target, navigate to "Copy Bundle Resources" and make sure 'BFIOSDK.bundle' is listed. If not, find it under the Resources folder in BFIOSDK.embeddedframework and drag it in.
-6. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework (BFIOTVSDK.framework for tvOS) to the list (if not already there).
-7. While you're still in "Link Binary with Libraries" add the frameworks:
+##### OLD WAY (BFIOSDK.embeddedframework - obj-c only)
+4a. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.embeddedframework into your Xcode project folder.
+
+5a. In the "Build Phases" section of your project target, navigate to "Copy Bundle Resources" and make sure 'BFIOSDK.bundle' is listed. If not, find it under the Resources folder in BFIOSDK.embeddedframework and drag it in.
+
+6a. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add the BFIOSDK.framework (BFIOTVSDK.framework for tvOS) to the list (if not already there).
+
+7a. While you're still in "Link Binary with Libraries" add the frameworks:
 	* Foundation.framework
 	* CoreGraphics.framework
 	* UIKit.framework
 	* AdSupport.framework
 	* CoreTelephony.framework (for iOS)
 	* SystemConfiguration.framework
-8. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
 
-#####NEW WAY (BFIOSDK.framework - both obj-c/swift)#####
-4. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.framework into your Xcode project folder.
-5. General -> Embedded binaries -> add BFIOSDK.framework
-6. Build Phases -> Copy bundle Resources -> add BFIOSDK.framework
+8a. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-ObjC' if not already present.
+
+##### NEW WAY (BFIOSDK.framework - both obj-c/swift)
+
+4b. [Download](https://github.com/beachfront/beachfront-io-ios-sdk) the SDK and drag-drop the BFIOSDK.framework into your Xcode project folder.
+
+5b. General -> Embedded binaries -> add BFIOSDK.framework
+
+6b. Build Phases -> Copy bundle Resources -> add BFIOSDK.framework
 
  
  
